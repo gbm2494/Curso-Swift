@@ -30,7 +30,6 @@ class Auto{
     func cambioDeVelocidad( ) -> ( actual : Int, velocidadEnCadena: String){
         
         var velocidadString : String = ""
-        var anterior : Int = 0
         
         if velocidad.rawValue == 0 {
             
