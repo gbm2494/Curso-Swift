@@ -26,3 +26,17 @@ class ColeccionDeHamburguesa{
         return hamburguesas [ Int( arc4random() ) % hamburguesas.count ]
     }
 }
+
+/*Estructura para generar colores al azar*/
+struct Colores{
+    
+    //arreglo de colores
+    let colores = [UIColor(red: 150/255, green: 170/255, blue: 20/255, alpha: 1), UIColor(red: 200/255, green: 47/255, blue: 20/255, alpha: 1), UIColor(red: 50/255, green: 170/255, blue: 200/255, alpha: 1)]
+    
+    //Función para obtener un color al azar
+    func obtenerColorAlAzar() -> UIColor{
+        let posicion = Int( arc4random() ) % colores.count
+        return colores[ posicion ]
+    }
+    
+}
